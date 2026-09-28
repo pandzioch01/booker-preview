@@ -1,6 +1,7 @@
-# APLIKACJA NIE JEST JESZCZE GOTOWA, JEST W FAZIE WCZESNEGO ROZWOJU
+## Booker — strona prezentująca aplikację
 
-# Booker — strona prezentująca aplikację
+# *APLIKACJA NIE JEST JESZCZE GOTOWA, JEST W FAZIE WCZESNEGO ROZWOJU*
+
 
 Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsiębiorców. Tatuażyści, trenerzy personalni, psychologowie - to dla nich, i nie tylko, stworzony jest Booker. Uniwersalność i prostota aplikacji pozwala na dostosowanie wyglądu i pojedynczych funkcjonalności na potrzeby klienta.
 
@@ -8,7 +9,7 @@ Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsięb
 
 # ENG
 
-# THE APP IS NOT READY YET — IT IS IN THE EARLY STAGES OF DEVELOPMENT
+# *THE APP IS NOT READY YET — IT IS IN THE EARLY STAGES OF DEVELOPMENT*
 
 # Booker — an app showcase page
 
