@@ -72,3 +72,21 @@ h1,h2,h3,p{margin-top:0}
 @media(max-width:560px){.language-switch{margin-left:auto}}
 @media(max-width:360px){.hero h1{font-size:47px}.h1-accent{font-size:.73em;white-space:nowrap}.model-card{padding:20px}.flow-node{width:58px}.flow-node strong{font-size:7px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.not-found-page{min-height:100dvh;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(circle at 73% 49%,#e9f2dc 0,transparent 36%),var(--cream)}
+.not-found-header{min-height:94px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e0e5da}
+.not-found-languages{display:flex;align-items:center;gap:11px;font-size:11px;font-weight:800;letter-spacing:.08em;color:#9aa59a}
+.not-found-languages a{color:#7e8a80;transition:color .2s}.not-found-languages a:hover,.not-found-languages a[aria-current=page]{color:#244b38}
+.not-found-main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);align-items:center;gap:70px;padding-block:70px 85px}
+.not-found-copy{position:relative;z-index:2}.not-found-copy .section-kicker{margin-bottom:29px}
+.not-found-copy h1{font-size:clamp(58px,6.1vw,98px);line-height:1.02;letter-spacing:-.075em;max-width:700px;margin:0 0 29px}
+.not-found-copy h1 em{font-family:var(--serif);font-weight:400;color:#7e67c4;letter-spacing:-.055em}
+.not-found-description{font-size:17px;line-height:1.7;color:#657168;max-width:510px;margin-bottom:32px}
+.not-found-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.not-found-actions .contact-link{justify-content:center;gap:12px;padding:15px 19px;min-height:52px}
+.not-found-visual{min-height:540px;position:relative;display:grid;place-items:center}.not-found-ring{position:absolute;border-radius:50%;pointer-events:none}.not-found-ring-outer{width:535px;height:535px;background:#dcebc9;opacity:.62}.not-found-ring-inner{width:385px;height:385px;border:1px dashed #a8c596}
+.not-found-number{position:relative;font-size:clamp(175px,19vw,320px);font-weight:800;letter-spacing:-.12em;line-height:1;color:#315f48;transform:rotate(-7deg);text-shadow:12px 19px 0 rgba(35,79,51,.08)}
+.not-found-star{position:absolute;top:55px;right:34px;transform:rotate(18deg);width:128px;height:128px;display:grid;place-items:center;border-radius:22px;background:#e7e0f3;box-shadow:0 18px 38px rgba(86,66,125,.15)}.not-found-star img{width:108px;height:108px}
+.not-found-mini-card{position:absolute;left:17px;bottom:68px;display:flex;align-items:center;gap:12px;padding:15px 18px;background:#fff;border:1px solid #e4e9e1;border-radius:10px;box-shadow:0 15px 37px rgba(41,72,48,.12);font-size:13px;font-weight:800;color:#345b43;transform:rotate(-5deg)}.not-found-mini-card .eyebrow-dot{box-shadow:none}
+.not-found-footer{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #e0e5da;font-size:10px;font-weight:800;letter-spacing:.13em;color:#879589}
+@media(max-width:800px){.not-found-main{grid-template-columns:1fr;gap:12px;padding-block:72px 40px}.not-found-visual{min-height:330px}.not-found-ring-outer{width:350px;height:350px}.not-found-ring-inner{width:260px;height:260px}.not-found-number{font-size:220px}.not-found-star{top:0;right:14%;width:90px;height:90px}.not-found-star img{width:75px;height:75px}.not-found-mini-card{left:18%;bottom:12px}.not-found-copy h1{font-size:clamp(56px,9vw,78px)}}
+@media(max-width:560px){.not-found-header{min-height:70px}.not-found-main{padding-block:54px 30px}.not-found-copy .section-kicker{margin-bottom:22px}.not-found-copy h1{font-size:clamp(48px,12vw,66px);margin-bottom:20px}.not-found-description{font-size:15px;line-height:1.6}.not-found-actions{align-items:flex-start;flex-direction:column;gap:22px}.not-found-visual{min-height:285px}.not-found-ring-outer{width:290px;height:290px}.not-found-ring-inner{width:220px;height:220px}.not-found-number{font-size:170px}.not-found-star{right:7%;top:4px;width:75px;height:75px;border-radius:14px}.not-found-star img{width:63px;height:63px}.not-found-mini-card{left:7%;bottom:13px;font-size:11px;padding:10px 12px}.not-found-footer{font-size:9px}}

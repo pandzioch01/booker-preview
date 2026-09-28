@@ -25,7 +25,7 @@ export function LanguageTransitionProvider({ children }: { children: React.React
   const [skipEntranceAnimation, setSkipEntranceAnimation] = useState(false);
 
   useEffect(() => {
-    document.documentElement.lang = pathname === "/en" ? "en" : "pl";
+    document.documentElement.lang = pathname === "/en" || pathname.startsWith("/en/") ? "en" : "pl";
     router.prefetch(pathname === "/en" ? "/" : "/en");
     if (!targetPath || pathname !== targetPath) return;
     setTargetPath(null);
