@@ -8,9 +8,9 @@ Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsięb
 
 # ENG
 
-**# THE APP IS NOT READY YET — IT IS IN THE EARLY STAGES OF DEVELOPMENT**
+# THE APP IS NOT READY YET — IT IS IN THE EARLY STAGES OF DEVELOPMENT
 
-**# Booker — an app showcase page**
+# Booker — an app showcase page
 
 Booker aims to make scheduling appointments, sessions, and training easier for businesses. It is designed for tattoo artists, personal trainers, psychologists, and many others. Its simplicity and flexibility allow its appearance and individual features to be tailored to each client’s needs.
 
