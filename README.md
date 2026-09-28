@@ -1,4 +1,3 @@
 # Booker — strona prezentująca aplikację
 
-Responsywny landing page w Next.js 15 i React 19. Opisuje Booker jako elastyczne narzędzie do umawiania wizyt, sesji i treningów. Strona zawiera schemat rezerwacji klienta, przegląd funkcji, przykładowy podgląd interfejsu oraz dwa warianty wdrożenia.
-
+Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsiębiorców. Tatuażyści, trenerzy personalni, psychologowie - to dla nich, i nie tylko, stworzony jest Booker. Uniwersalność i prostota aplikacji pozwala na dostosowanie wyglądu i pojedynczych funkcjonalności na potrzeby klienta.
