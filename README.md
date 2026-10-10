@@ -1,4 +1,4 @@
-## Booker
+## reBooked
 
 # *APLIKACJA NIE JEST JESZCZE GOTOWA, JEST W FAZIE WCZESNEGO ROZWOJU*
 
@@ -13,7 +13,7 @@ Warto także zaznaczyć, że to repozytorium nie jest repozytorium aplikacji, sa
 
 # *THE APP IS NOT READY YET — IT IS IN THE EARLY STAGES OF DEVELOPMENT*
 
-Booker aims to make scheduling appointments, sessions, and training easier for businesses. It is designed for tattoo artists, personal trainers, psychologists, and many others. Its simplicity and flexibility allow its appearance and individual features to be tailored to each client’s needs.
+reBooked aims to make scheduling appointments, sessions, and training easier for businesses. It is designed for tattoo artists, personal trainers, psychologists, and many others. Its simplicity and flexibility allow its appearance and individual features to be tailored to each client’s needs.
 
 *The app is designed to grow and be customized for each client — with options such as online payments, a different visual style, or additional features.*
 
