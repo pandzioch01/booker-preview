@@ -3,7 +3,7 @@
 # *APLIKACJA NIE JEST JESZCZE GOTOWA, JEST W FAZIE WCZESNEGO ROZWOJU*
 
 
-Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsiębiorców. Tatuażyści, trenerzy personalni, psychologowie - to dla nich, i nie tylko, stworzony jest Booker. Uniwersalność i prostota aplikacji pozwala na dostosowanie wyglądu i pojedynczych funkcjonalności na potrzeby klienta.
+Celem aplikacji jest łatwe umawianie spotkań, sesji, treningów dla przedsiębiorców. Tatuażyści, trenerzy personalni, psychologowie - to dla nich, i nie tylko, stworzony jest reBooked. Uniwersalność i prostota aplikacji pozwala na dostosowanie wyglądu i pojedynczych funkcjonalności na potrzeby klienta.
 
 *Aplikacja jest przystosowana pod rozwój i personalizację pod klienta - płatności, inna szata graficzna czy dodatkowe funkcjonalności*
 

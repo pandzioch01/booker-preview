@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { LanguageTransitionProvider } from "@/components/client/language-transition";
+import { sitePath } from "@/lib/paths";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Booker — rezerwacje, które pasują do Twojej pracy",
-  icons: { icon: "/favicon.svg" },
+  title: "reBooked — rezerwacje, które pasują do Twojej pracy",
+  icons: { icon: sitePath("/favicon.svg") },
   description:
-    "Booker to elastyczna aplikacja do umawiania wizyt, sesji i treningów. Poznaj prostszy sposób na organizację spotkań dla Twojej firmy.",
+    "reBooked to elastyczna aplikacja do umawiania wizyt, sesji i treningów. Poznaj prostszy sposób na organizację spotkań dla Twojej firmy.",
   openGraph: {
-    title: "Booker — spotkania bez zbędnych kroków",
+    title: "reBooked — spotkania bez zbędnych kroków",
     description:
       "Klient wybiera termin, a Ty zarządzasz rezerwacjami w jednym miejscu.",
     type: "website",

@@ -4,38 +4,40 @@ import { useEffect } from "react";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Starburst } from "@/components/starburst";
+import { appPath, sitePath } from "@/lib/paths";
 
 const copy = {
   pl: {
     eyebrow: "NIE ZNALEZIONO STRONY",
     title: "Nie znaleziono",
     accent: "tej strony.",
-    description: "Wygląda na to, że ten adres nie prowadzi już do żadnej strony. Wróć do Bookera i zobacz, jak może uprościć umawianie spotkań.",
+    description: "Wygląda na to, że ten adres nie prowadzi już do żadnej strony. Wróć do reBooked i zobacz, jak może uprościć umawianie spotkań.",
     home: "Wróć na stronę główną",
     explore: "Poznaj możliwości",
-    homeLabel: "Booker — strona główna",
+    homeLabel: "reBooked — strona główna",
     note: "Zgubiony adres. Dobry kierunek.",
   },
   en: {
     eyebrow: "PAGE NOT FOUND",
     title: "This page is",
     accent: "missing.",
-    description: "It looks like this address no longer leads anywhere. Head back to Booker and see how it can make scheduling simpler.",
+    description: "It looks like this address no longer leads anywhere. Head back to reBooked and see how it can make scheduling simpler.",
     home: "Back to homepage",
     explore: "Explore the features",
-    homeLabel: "Booker — homepage",
+    homeLabel: "reBooked — homepage",
     note: "Wrong turn. Right place.",
   },
 } as const;
 
 export default function NotFound() {
   const pathname = usePathname();
-  const locale = pathname === "/en" || pathname.startsWith("/en/") ? "en" : "pl";
+  const route = appPath(pathname);
+  const locale = route === "/en" || route.startsWith("/en/") ? "en" : "pl";
   const text = copy[locale];
-  const home = locale === "en" ? "/en" : "/";
+  const home = sitePath(locale === "en" ? "/en/" : "/");
 
   useEffect(() => {
-    document.title = locale === "en" ? "Page not found — Booker" : "Nie znaleziono strony — Booker";
+    document.title = locale === "en" ? "Page not found — reBooked" : "Nie znaleziono strony — reBooked";
   }, [locale]);
 
   return (
@@ -43,12 +45,12 @@ export default function NotFound() {
       <header className="not-found-header container">
         <a href={home} className="brand" aria-label={text.homeLabel}>
           <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>
-          <span>booker<span className="brand-dot">.</span></span>
+          <span>reBooked<span className="brand-dot">.</span></span>
         </a>
         <div className="not-found-languages" aria-label={locale === "pl" ? "Język strony" : "Page language"}>
-          <a href="/" lang="pl" aria-current={locale === "pl" ? "page" : undefined}>PL</a>
+          <a href={sitePath("/")} lang="pl" aria-current={locale === "pl" ? "page" : undefined}>PL</a>
           <span aria-hidden="true">/</span>
-          <a href="/en" lang="en" aria-current={locale === "en" ? "page" : undefined}>EN</a>
+          <a href={sitePath("/en/")} lang="en" aria-current={locale === "en" ? "page" : undefined}>EN</a>
         </div>
       </header>
 
@@ -67,11 +69,11 @@ export default function NotFound() {
           <div className="not-found-ring not-found-ring-inner" />
           <span className="not-found-number">404</span>
           <span className="not-found-star"><Starburst size={108} /></span>
-          <span className="not-found-mini-card"><span className="eyebrow-dot" /> Booker <ArrowUpRight size={14} /></span>
+          <span className="not-found-mini-card"><span className="eyebrow-dot" /> reBooked <ArrowUpRight size={14} /></span>
         </div>
       </main>
 
-      <footer className="not-found-footer container"><span>{text.note}</span><span>BOOKER / 404</span></footer>
+      <footer className="not-found-footer container"><span>{text.note}</span><span>reBooked / 404</span></footer>
     </div>
   );
 }

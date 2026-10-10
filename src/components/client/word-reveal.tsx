@@ -1,19 +1,18 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 import { useSkipEntranceAnimation } from "@/components/client/language-transition";
 
 type WordRevealProps = { text: string; className?: string };
 
 /** Adaptacja idei Text Effect z Motion Primitives: animacja po słowach. */
 export function WordReveal({ text, className }: WordRevealProps) {
-  const reducedMotion = useReducedMotion();
   const skipEntranceAnimation = useSkipEntranceAnimation();
   return (
     <motion.span
       className={className}
       aria-label={text}
-      initial={reducedMotion || skipEntranceAnimation ? false : "hidden"}
+      initial={skipEntranceAnimation ? false : "hidden"}
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.075, delayChildren: 0.08 } } }}
     >
